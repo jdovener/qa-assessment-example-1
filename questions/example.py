@@ -14,4 +14,12 @@
 	# What was the name of the function we have seen which changes the case of a string?  Use your CLI to access the Python documentation and get help(str).
     
 def endsPy(input):
-	return False
+	lowcase = input.lower()
+	list1=[]
+	list1[:0]=lowcase
+	if list1[-2:] == ['p', 'y']:
+		return True
+	else:
+		return False
+
+print(endsPy("hurrayforpY"))
